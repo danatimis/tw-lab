@@ -1,0 +1,32 @@
+body {
+margin:0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+font-family: Arial;
+}
+
+@media (max-width: 900px) {
+main {width: 800px;}
+.columns {justify-content: center; }
+.column {width: 300px; }
+}
+
+@media (max-width: 750px) {
+main {
+width: 350px;
+padding: 10px 0;
+}
+.columns {
+flex-direction: column;
+gap: 15px;
+margin: 20px 0;
+}
+.column { width: 100%;}
+header nav {
+flex-direction: column;
+gap: 10px;
+}
+}

@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f3f5;
+  color: #2c363e;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background-color: #2c363e;
+  padding: 25px 0 20px 0;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header nav a {
+  color: #f1c40f;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  transition: opacity 0.2s ease;
+}
+
+header nav a:hover {
+  opacity: 0.8;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.columns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.column {
+  background-color: #ffffff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 340px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
+}
+
+.column h2 {
+  margin-bottom: 12px;
+  color: #1a252f;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.column p {
+  margin-bottom: 25px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #555555;
+}
+
+
+.btn {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 10px 18px;
+  border-radius: 6px;
+  background-color: #2c363e;
+  color: #f1c40f;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #1a252f;
+}
+
+/* Footer */
+footer {
+  background-color: #2c363e;
+  padding: 18px 0;
+  text-align: center;
+  color: #f1c40f;
+  font-size: 12px;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+footer a {
+  color: #f1c40f;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  header nav {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
+    max-width: 100%;
+  }
+}
