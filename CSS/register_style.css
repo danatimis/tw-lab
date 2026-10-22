@@ -134,7 +134,7 @@ input:focus, select:focus, textarea:focus {
   text-decoration: underline;
 }
 
-/* Responsivitate pentru ecrane mici */
+
 @media (max-width: 480px) {
   .two-col {
     flex-direction: column;

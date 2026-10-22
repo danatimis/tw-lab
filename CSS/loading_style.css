@@ -6,20 +6,23 @@ background: linear-gradient(90deg, #3498db, #1f4a75);
 display: flex;
 flex-direction: column;
 align-items: center;
+border-top: 40px;
 }
 
 .logo {
 width: 150px;
 height: auto;
 margin-bottom: 20px;
+margin-top: 250px;
 }
 .loader {
 width: 40px;
-  height: 40px;
-  border: 8px solid #3498db;;
-  border-top: 8px solid #3498db;
-  border-radius: 50%;
-  animation: spin 1.0s linear infinite;
+height: 40px;
+border: 8px solid #3498db;;
+border-top: 8px solid #3498db;
+border-radius: 50%;
+animation: spin 1.0s linear infinite;
+align-self: center;
 }
 @keyframes spin {
 0% { transform: rotate(0deg); }

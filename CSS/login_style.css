@@ -19,7 +19,7 @@ body {
   width: 100%;
   max-width: 900px;
   min-height: 450px;
-  background-color: #ffffff; /* Fundal alb pentru container ca textul să fie vizibil */
+  background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   overflow: hidden;
@@ -30,7 +30,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1e252b; /* Fundal ușor contrastant pentru zona de imagine */
+  background-color: #1e252b;
   padding: 20px;
 }
 
@@ -52,7 +52,7 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 40px;
-  color: #2c363e; /* Acum textul este închis la culoare pe fundalul alb al containerului */
+  color: #2c363e;
 }
 
 .login-form h2 {
@@ -69,6 +69,7 @@ body {
   font-size: 15px;
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  margin-left: 20%;
 }
 
 .login-form input:focus {
@@ -87,6 +88,7 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: 10px;
+  margin-left: 40%;
 }
 
 .login-form button:hover {
@@ -111,7 +113,7 @@ body {
   color: #024A76;
 }
 
-/* Adaptare Responsive pentru telefoane și tablete mici */
+
 @media (max-width: 768px) {
   .login-container {
     flex-direction: column;
@@ -120,7 +122,7 @@ body {
   }
 
   .separator {
-    display: none; /* Ascundem separatorul vertical pe telefoane */
+    display: none;
   }
 
   .login-image {

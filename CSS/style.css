@@ -8,6 +8,7 @@ height: 100vh;
 font-family: Arial;
 }
 
+
 @media (max-width: 900px) {
 main {width: 800px;}
 .columns {justify-content: center; }
