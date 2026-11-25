@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>...</title>
+    <meta http-equiv="refresh" content="2;url=login.html">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'CSS/loading_style.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/loading_style.css' %}">
+</head>
+<body>
+    {% block content %}
+    <div class="loading-container">
+        <img src="{% static 'MEDIA/logofi.png' %}" alt="Logo" class="logo">
+        <div class="loader"></div>
+    </div>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acasă - Comunitatea de Tehnologii Web 2025</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'CSS/home_style.css' %}">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Comunitatea de Tehnologii Web 2025</h1>
+      <nav>
+        <a href="{% url 'home' %}">Acasă</a>
+        <a href="{% url 'technologies' %}">Tehnologii</a>
+        <a href="{% url 'universities' %}">Facultăți</a>
+        <a href="{% url 'chatbot' %}">ChatBot</a>
+        <a href="{% url 'logout' %}">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="columns">
+      
+      <div class="column">
+        <div>
+          <h2>Lista de facultăți</h2>
+          <p>Aici vei găsi informații detaliate despre facultățile care oferă programe relevante pentru TW.</p>
+        </div>
+        <a href="{% url 'universities' %}" class="btn">Vezi mai mult</a>
+      </div>
+
+      <div class="column">
+        <div>
+          <h2>Tehnologii relevante</h2>
+          <p>Descoperă cele mai noi tehnologii web și framework-uri folosite în industrie și în educație.</p>
+        </div>
+        <a href="{% url 'technologies' %}" class="btn">Vezi mai mult</a>
+      </div>
+
+      <div class="column">
+        <div>
+          <h2>ChatBot</h2>
+          <p>Interacționează cu ChatBot-ul nostru pentru a primi răspunsuri rapide.</p>
+        </div>
+        <a href="{% url 'chatbot' %}" class="btn">Vezi mai mult</a>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Comunitatea de Tehnologii Web</p>
+      <p>
+        <a href="https://www.uvt.ro/" target="_blank" rel="noopener noreferrer">Universitatea de Vest din Timișoara</a> | 
+        <a href="https://info.uvt.ro/" target="_blank" rel="noopener noreferrer">Facultatea de Informatică</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
